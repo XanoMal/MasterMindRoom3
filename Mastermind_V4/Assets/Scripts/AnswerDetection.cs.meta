@@ -5,7 +5,8 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - PlayerRows: {instanceID: 0}
-  - HintGrids: {fileID: 2921659734410118841, guid: 65a3bb021648f0a49a90338c457c8ec1, type: 3}
+  - HintGrids: {instanceID: 0}
+  - RowIndicator: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

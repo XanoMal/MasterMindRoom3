@@ -47,7 +47,7 @@ namespace Assets.Scripts
         public GameObject[] GetCurrentPlayerRow ()
         {
             Transform t = playerRows.transform;
-            if (CurrentMove <= t.childCount)
+            if (CurrentMove < t.childCount)
             {
                 Transform childTransform = t.transform.GetChild(CurrentMove);
                 int arrayLen = childTransform.childCount;
@@ -73,7 +73,7 @@ namespace Assets.Scripts
         public GameObject GetCurrentHintGrid()
         {
             Transform t = hintGrids.transform;
-            if (CurrentMove <= t.childCount)
+            if (CurrentMove < t.childCount)
             {
                 Transform childTransform = t.transform.GetChild(CurrentMove);
                 return childTransform.gameObject;

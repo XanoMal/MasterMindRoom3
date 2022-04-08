@@ -31,6 +31,8 @@ public class AnswerDetection : MonoBehaviour
     [Header("Initialize with the HintGrids Parent Game Object")]
     [SerializeField] GameObject HintGrids;
 
+    public GameObject RowIndicator;
+
     /// <summary>
     /// Specialized non-MonoBehaviour class 
     /// used to store all of the moves, hints,
@@ -85,6 +87,7 @@ public class AnswerDetection : MonoBehaviour
         {
             MoveNumber++;
             GetGrids(MoveNumber);
+            RowIndicator.transform.Translate(0,9,0);
         }
 
     }
